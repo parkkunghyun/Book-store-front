@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  .primary-font {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .secondary-font {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+.primary {
+  @apply text-[#FFCE1A];
+}
+
+.bg-primary {
+    @apply bg-[#FFCE1A];
+}
+
+.secondary {
+  @apply text-[#0D0842];
+}
+
+.bg-secondary {
+    @apply bg-[#0D0842];
+  }
+
+.black-bg {
+  @apply text-[#F3F3F3];
+}
+
+.favorite {
+  @apply text-[#FF5841];
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  @apply bg-white flex justify-center items-center;
+}
+
+.swiper-slide img {
+  @apply block w-full h-full object-cover;
+}
+
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-next {
+  @apply bg-white p-5 rounded-full z-50 shadow-md;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 16px !important;
+}
+
+.btn-primary {
+  @apply bg-[#FFCE1A] px-12 py-2 rounded-md text-base font-bold hover:bg-[#0D0842] hover:text-white transition-all duration-200 cursor-pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
