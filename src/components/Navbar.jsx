@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import { FaSearch } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
@@ -17,6 +17,7 @@ const navigation = [
 ]
 
 const Navbar = () => {
+    const navigate = useNavigate();
     const {logout, currentUser} = useAuth();
 
     const [isDropdownOpen, setIsDropDownOpen] = useState(false);
@@ -24,6 +25,7 @@ const Navbar = () => {
     
     const handleLogout = () => {
         logout();
+        navigate("/login")
     }
   return (
     <header className="max-w-screen-2xl mx-auto px-4 py-6">

@@ -45,7 +45,7 @@ const AdminLogin = () => {
       }
   return (
     <div className='h-screen flex justify-center items-center '>
-        <div className='w-full max-w-sm mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4'>
+        <div className='w-full max-w-lg mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4'>
             <h2 className='text-xl font-semibold mb-4'>Admin Dashboard Login </h2>
 
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -74,6 +74,8 @@ const AdminLogin = () => {
             </form>
 
             <p className='mt-5 text-center text-gray-500 text-xs'>©2025 Book Store. All rights reserved.</p>
+
+            <p className='text-center font-bold text-sm'>유저네임에 admin, password에 admin을 입력하면 로그인 됩니다.</p>
         </div>
     </div>
   )
